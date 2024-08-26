@@ -1,0 +1,18 @@
+@font-face {
+    font-family: pop;
+    src: url(../fonts/Poppins-Bold.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: pink;
+}
+.container{
+    max-width: 1472px;
+    width: 100%;
+    padding: 0 16px;
+    margin: 0 auto;
+}

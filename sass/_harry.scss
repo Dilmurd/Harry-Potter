@@ -1,0 +1,232 @@
+
+.top{
+    display: flex;
+    justify-content: center;
+    img{
+        width: 450px;
+    }
+}
+.section{
+    margin-top: 50px;
+    .wrapper{
+        display: flex;
+        align-items: center;
+        gap: 50px;
+        transition: .5s;
+        &:hover{
+            transform: translateY(-50px);
+        }
+        .text{
+            p{
+                max-width: 700px;
+                font-size: 30px;
+                font-weight: 600;
+                &:hover{
+                    color: rgb(201, 19, 125);
+                }
+            }
+    }
+    .img{
+        img{
+            width: 750px;
+            &:hover{
+                border-radius: 50px;
+            }
+        }
+    }
+}
+}
+.imgs{
+    margin-top: 50px;
+    opacity: 0;
+    height: 700px;
+    width: 1400px;
+    transition: .80s;
+    &:hover{
+        opacity: 1;
+    }
+    img{
+        width: 1400px;
+        height: 700px;
+        object-fit: cover;
+        &:hover{
+            border-radius: 50px;
+        }
+    }
+}
+.wrappers{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    overflow: auto;
+    grid-gap: 30px;
+    margin-top: 50px;
+    .card{
+        &:hover{
+            width: 500px;
+        }
+        img{
+            width: 100%;
+            height: 1000px;
+            object-fit: cover;
+        }
+    }
+}
+.secttion{
+    margin-top: 50px;
+    .wrappper{
+        display: flex;
+        gap: 50px;
+        .item{
+            img{
+                border-radius: 40px;
+            }
+        }
+        .items{
+            img{
+                width: 700px;
+                object-fit: cover;
+                height: 1280px;
+                border-radius: 40px;
+            }
+        }
+    }
+}
+.wrappere{
+    display: flex;
+    margin-top: 50px;
+    gap: 50px;
+    .imggg{
+        img{
+            height: 400px;
+            transition: .80s;
+            &:hover{
+                height: 1160px;
+                border-radius: 50px;
+            }
+        }
+    }
+    .imgggs{
+        img{
+            height: 400px;
+            transition: .80s;
+
+            &:hover{
+                height: 1160px;
+                border-radius: 50px;
+            }
+        }
+    }
+}
+.tex{
+    font-size: 20px;
+    transition: .80s;
+    &:hover{
+        font-size: 40px;
+        color: rgb(218, 120, 136);
+    }
+    p{
+        font-family: pop;
+        max-width: 600px;
+    }
+}
+.wrap{
+
+
+    display: flex;
+    margin-top: 50px;
+    gap: 30px;
+    .imga{
+        img{
+            height: 600px;
+            transition: .80s;
+            &:hover{
+                height: 1000px;
+                border-radius: 50px;
+            }
+        }
+    }
+    .texts{
+        padding-top: 10px;
+        .p{
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+        .pa{
+            font-size: 30px;
+        }   
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.loader_wrapper {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: pink;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 9999999;
+  }
+  
+  .spin-loader {
+    border-radius: 80%;
+    display: block;
+    height: 50px;
+    width: 50px;
+    position: relative;
+    animation: spin 0.675s linear 0s infinite normal;
+    background: pink;
+    transform: rotate(0deg) scale(2);
+  }
+  
+  .spin-loader:before,
+  .spin-loader:after {
+    content: "";
+    display: block;
+    position: absolute;
+  }
+  
+  .spin-loader:before {
+    border-radius: 0 90px 90px 0;
+    height: 50px;
+    width: 50%;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    background: pink;
+    background-image: linear-gradient(black , black);
+  }
+  
+  .spin-loader:after {
+    border-radius: 80%;
+    height: 40px;
+    width: 40px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    background: pink;
+  }
+  
+  @keyframes spin {
+    to {
+      transform: rotate(360deg) scale(2);
+    }
+  }
